@@ -12,15 +12,27 @@ def bot_cool(user_interest):
     bot_cool_yes = ["A smile is the same in all languages"]
     bot_cool_no = ["Okay, talk to you soon!"]
 
-    if user_interest == "yes"
+    if user_interest == "yes":
         return bot_cool_yes
-    else:
+    else: 
+        return bot_cool_no 
         
         
 
 
 print("Hello and Welcome to Nicebot")
-user_response = input("Please enter how your day has been so far")
+print("Please enter how your day has been so far")
+
+user_response = ""
+
+while True:
+    user_response = input("How has your day been so far?:")
+
+    if user_response == "done":
+        break
+
+
+
 
 
 
