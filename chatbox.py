@@ -1,12 +1,14 @@
 from random import choice
 def get_bot_response(user_response):
     bot_response_good = ["Awesome!","Woohoo!","I'm really happy to hear that"]
-    bot_response_bad = ["Sorry to hear that","I hope things perk up"]
+    bot_response_bad = ["Sorry to hear that","Oh no!","I hope things perk up"]
 
-    if user_response == "good" or "great":
+    if user_response == "good":
         return choice(bot_response_good)
     elif user_response == "bad":
         return choice(bot_response_bad) 
+    else:
+        return (bot_response_bad)
 
 def bot_cool(user_interest):
     bot_cool_yes = ["A smile is the same in all languages"]
@@ -30,6 +32,12 @@ while True:
 
     if user_response == "done":
         break
+    
+    bot_response = get_bot_response
+    (user_response)
+    print(bot_response)
+    
+
 
 
 
