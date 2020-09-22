@@ -5,12 +5,11 @@ def get_bot_response(user_response):
 
     if user_response == "good":
         return choice(bot_response_good)
-    elif user_response == "bad":
+    elif user_response == "bad": 
         return choice(bot_response_bad) 
-    else:
-        return (bot_response_bad)
+   
 
-def bot_cool(user_interest):
+def get_bot_cool(user_interest):
     bot_cool_yes = ["A smile is the same in all languages"]
     bot_cool_no = ["Okay, talk to you soon!"]
 
@@ -29,18 +28,30 @@ user_response = ""
 
 while True:
     user_response = input("How has your day been so far?:")
-
-    if user_response == "done":
-        break
     
     bot_response = get_bot_response
     (user_response)
     print(bot_response)
     
+print("Would you like to hear something interesting?")
+print("Please enter yes or no")
+
+user_interest = ""
+
+while True:
+    user_interest = input("Would you like to hear something cool?") 
+
+    if user_interest == "done":
+        break
+
+    bot_cool = get_bot_cool
+    (user_interest)
+    print(bot_cool)
+
+    
 
 
 
 
-
-
+ 
 
